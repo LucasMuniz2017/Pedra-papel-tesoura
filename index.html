@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de pedra papel e tesoura</title>
+</head>
+
+<body style="font-family:'Press Start 2P';">
+
+
+    <main id="tela" class="bg-gray-800 transition-colors duration-500 w-full h-screen flex items-center justify-center flex-col px-90 py-50">
+        <!-- popup -->
+         <div id="popup" class=" bg-white fixed top-[-100px] rounded-xl p-4 transition-all duration-500">teste</div>
+
+        <!-- placar -->
+        <h1 id="placar" class=" text-white text-[70px]">0 - 0</h1>
+
+
+        <!-- botoes -->
+        <section class="bg-slate-600 rounded-xl flex justify-around p-4 gap-5 h-full w-full drop-shadow-2xl ">
+
+            <!-- pedra -->
+            <button id="pedra"
+                class="bg-[#6C7478] bg-[url('assets/images/pedra.png')] bg-no-repeat bg-center h-full w-1/3 flex flex-col rounded-4xl hover:scale-97 transition-transform">
+                <H1 class="bg p-2 text-[70px] text-[#292F36]">PEDRA</H1>
+            </button>
+
+            <!-- papel -->
+            <button id="papel"
+                class="bg-[#E0E1E4] bg-[url('assets/images/papel.png')] bg-no-repeat bg-center h-full w-1/3 flex flex-col rounded-4xl hover:scale-97 transition-transform">
+                <H1 class="bg p-2 text-[70px] text-[#21252B]">PAPEL</H1>
+            </button>
+
+            <!-- tesoura-->
+            <button id="tesoura"
+                class="bg-[#7B0D19] bg-[url('assets/images/tesoura.png')] bg-no-repeat bg-center h-full w-1/3 flex flex-col rounded-4xl hover:scale-97 transition-transform">
+                <H1 class="bg p-2 text-[70px] text-[#F1F1F2]">TESOURA</H1>
+            </button>
+
+
+
+        </section>
+
+    </main>
+
+</body>
+<script src="script.js"></script>
+
+</html>
