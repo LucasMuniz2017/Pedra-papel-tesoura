@@ -36,7 +36,7 @@ function mostrarPopup(texto) {
 }
 
 function escolhaMaquina() {
-    const opçao = ["PEDRA", "PAPEL", "TESOURA"];
+    const opçao = ["pedra", "papel", "tesoura"];
     const opçaoSorteada = Math.floor(Math.random() * 3);
     return opçao[opçaoSorteada]
 }
